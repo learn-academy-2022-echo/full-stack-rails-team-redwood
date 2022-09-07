@@ -1,0 +1,17 @@
+<h2>Add a new post<h2>
+<%= form_with model: @posts, local: true do |form| %>
+
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+
+    <%= form.label :text %>
+    <%= form.text_field :text %>
+
+    <br>
+
+    <%= form.submit 'Create Post' %>
+    <% end %>
+
+    <br>
+
+    <h4><%= link_to 'Back To All Posts', posts_path %></h4>
