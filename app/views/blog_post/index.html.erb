@@ -2,9 +2,9 @@
 <% @posts.each do |value|%>
     <ul>
         <li>
-            <%= link_to value.name, post_path(value) %>
+            <%= link_to value.name, blog_post_path(value) %>
         </li>
     </ul>
 <% end %>
 
-<%= link_to 'Add a New Post', new_post_path %>
+<%= link_to 'Add a New Post', new_blog_post_path %>

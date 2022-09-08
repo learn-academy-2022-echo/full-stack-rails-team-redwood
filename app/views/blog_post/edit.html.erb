@@ -1,4 +1,4 @@
-<h2>Add a new post<h2>
+<h2>Edit Post</h2>
 <%= form_with model: @post do |form| %>
 
     <%= form.label :name %>
@@ -9,9 +9,8 @@
 
     <br>
 
-    <%= form.submit 'Create Post' %>
+    <%= form.submit 'Edit Post' %>
     <% end %>
 
-    <br>
-
-    <h4><%= link_to 'Back To All Posts', blog_posts_path %></h4>
+<br>
+    <h4><%= link_to 'Back To All Posts', posts_path %></h4>
