@@ -27,9 +27,9 @@ class BlogPostController < ApplicationController
         @post = BlogPost.find(params[:id])
          @post.update(blog_params)
         if @post.valid?
-            redirect_to blog_post_path
+            redirect_to blog_post_path(@post)
         else
-            redirect_to edit_blog_post_path
+            redirect_to edit_blog_post_path(@post)
         end
     end
 

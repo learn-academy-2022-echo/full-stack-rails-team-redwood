@@ -3,10 +3,11 @@
 <%= @post.text %>
 
 <br>
+<br>
 <%= link_to 'Edit Post', edit_blog_post_path(@post) %>
+<br>
 <br>
 
 <%= button_to 'Delete Post', delete_blog_post_path(@post), method: :delete, form:{data: { 'turbo-confirm': 'Are you sure?'} }%>
 <br>
-
 <%= link_to 'Back To All Posts', blog_posts_path %>

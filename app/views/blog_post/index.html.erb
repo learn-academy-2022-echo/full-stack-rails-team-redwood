@@ -1,5 +1,5 @@
 <h1>All The Posts</h1>
-<% @posts.each do |value|%>
+<% @posts.map do |value|%>
     <ul>
         <li>
             <%= link_to value.name, blog_post_path(value) %>
