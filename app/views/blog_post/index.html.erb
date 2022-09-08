@@ -1,0 +1,10 @@
+<h1>All The Posts</h1>
+<% @posts.each do |value|%>
+    <ul>
+        <li>
+            <%= link_to value.name, post_path(value) %>
+        </li>
+    </ul>
+<% end %>
+
+<%= link_to 'Add a New Post', new_post_path %>
